@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.text {
+    width: 60%;
+    margin: auto;
+    font-family: 'Calibri', cursive;
+}
+
+.text h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.text h2 {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.text p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+strong {
+    color: var(--cor-primaria);
+}
+
+@media screen and (max-width: 540px) {
+    .text h1 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .text {
+        width: 80%;
+    }
+
+    .text h1 {
+        font-size: 15px;
+    }
+
+    .text h2 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #text {
+        width: 80%;
+    }
+}

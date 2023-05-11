@@ -1,0 +1,151 @@
+.produto {
+    display: grid;
+    grid-template: auto / 50% 50%;
+}
+
+#img0 {
+    width: 82%;
+}
+
+#img0:hover {
+    cursor: pointer;
+}
+
+.img {
+    text-align: center;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
+    width: 20%;
+    transition: 0.3s;
+}
+
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.descricao {
+    padding: 15px 50px;
+    border-left:3px solid rgb(175, 175, 175);
+}
+
+.descricao p {
+    margin: 20px 0;
+}
+
+.fa-minus,
+.fa-plus {
+    cursor: pointer;
+    background-color: #e2ebf3;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+p,
+li {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+h4 {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.preco {
+    color: var(--cor-crimson);
+    font-size: 35px;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+input {
+    width: 35px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.quantidade {
+    margin-bottom: 35px;
+}
+
+.quantidade span {
+    color: #718aa2;
+}
+
+.quantidade span,
+.icons {
+    font-size: 14px;
+    padding-left: 15px;
+    margin: 5px;
+}
+
+#btn {
+    width: 180px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: var(--cor-crimson);
+    margin: 60px auto;
+}
+
+#btn:hover {
+    background-color: black;
+    color: var(--cor-branca);
+}
+
+img,
+#cupom,
+#beneficios {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gif {
+    text-align: center;
+}
+
+.gif img {
+    width: 60%;
+}
+
+@media(max-width: 750px) { 
+    .produto {
+        display: block;
+    }
+
+    .descricao {
+        padding: 15px 20px;
+    }
+
+    .gif img {
+        width: 80%;
+    }
+  }

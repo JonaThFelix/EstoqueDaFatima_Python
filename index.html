@@ -1,0 +1,295 @@
+<!-- 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+
+PROJETO DO INTERDISCIPLINAR DE 2023.1 DA TURMA DE ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - ADS2NAB (2022.2)
+FACULDADE: UNIBRA (CENTRO UNIVERSITÁRIO BRASILEIRO)
+GRUPO DE DESENVOLVIMENTO POO: JONATHAN, HENRIQUE, ELIAS, VICTOR
+ORIENTADORA: ALINE FARIAS
+
+
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+
+>> É doce, mas não é mole não !!!
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--<script>
+        var nome = prompt('Portifólio de estoque da Fátima \n\nQual seu nome? ')
+        alert('Bem Vindo(a) '+nome+'!!!'+ '\n\nAtravés desse site você poderá ver os produtos que temos disponível em nosso estoque !\n\n\nEquipe: Fatima Perfums')
+    </script>-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque da Fátima</title>
+
+    <link rel="stylesheet" href="src/css/fontes.css" />
+    <link rel="stylesheet" href="src/css/variaveis.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <!-- Global -->
+    <link rel="stylesheet" href="src/css/globais.css">
+    <!-- Seções -->
+    <link rel="stylesheet" href="src/css/secoes/header.css">
+    <link rel="stylesheet" href="src/css/secoes/slider.css">
+    <link rel="stylesheet" href="src/css/secoes/main.css">
+    <link rel="stylesheet" href="src/css/secoes/footer.css">
+
+    <link rel="icon" type="image/png" href="./src/imagem/logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </header>
+    <div class="spam">
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/" target="_blanck" id="facebook"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blanck" id="instagram"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+        </div>
+        <div class="frete-gratis">
+            <h5>CATÁLOGO DE ESTOQUE</h5>
+        </div>
+        <div class="creditos">
+            ADS2NAB | Inter 2023.1
+        </div>
+    </div>
+    <header class="header">
+        <div>
+            <div class="logo">
+                <img src="src/imagem/gif.gif" alt="Logo fatimaperfumes">
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <nav>
+                    <input id="menu-hamburguer" type="checkbox" />
+                    <label for="menu-hamburguer">
+                        <div class="menu">
+                            <span class="hamburguer"></span>
+                        </div>
+                    </label>
+                    <ul>
+                        <li><a href="#">| HOME |</a></li>
+                        <li><a href="#">| PERFUMES |</a></li>
+                        <li><a href="#">| COSMÉTICOS |</a></li>
+                        <li><a href="#">| KITS |</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+
+                    <div class="slide first">
+                        <img src="src/imagem/slide3.png" alt="Slide Fatima 1">
+                    </div>
+                    <div class="slide">
+                        <img src="src/imagem/slide2.png" alt="Slide Fatima 2">
+                    </div>
+                    <div class="slide">
+                        <img src="src/imagem/slide1.png" alt="Slide Fatima 3">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+        <hr>
+            <hr>
+            <br>
+            <br>
+        </hr>
+        </hr>
+            <div class="titulo section-title">
+                <h1>CATÁLOGO DE PRODUTOS</h1>
+                <!-- IMAGENS E FUNÇÕES DOS 3 DO DESTAQUES-->
+            </div>
+            <div class="container row justify-content-center">
+                <div class="produto">
+                    <a href="./src/produtos/produtos0.html">
+                        <ul class="produto">
+                            <li><img src="./src/produtos/imagem/0/desc1.png" alt="Sauvage Dior"></li>
+                            <li>Sauvage Dior - Perfume Masculino - Eau de Toilette - 30ml</li>
+                            <li><span>R$ 469,90</span></li>
+                    </a>
+                    </ul>
+                </div>
+                <div class="produto">
+                    <a href="./src/produtos/produtos1.html">
+                        <ul class="produto">
+                            <li><img src="./src/produtos/imagem/1/olimpia.gif" alt="Olimpia"></li>
+                            <li>Olympéa Paco Rabanne Eau de Parfum - 30ml</li>
+                            <li><span>R$ 368,90</span></li>
+                    </a>
+                    </ul>
+                </div>
+                <div class="produto">
+                    <a href="./src/produtos/produtos2.html">
+                        <ul class="produto">
+                            <li><img src="./src/produtos/imagem/2/malbecinicio.gif" alt="malbec"></li>
+                            <li>Malbec X Desodorante Colônia 100ml</li>
+                            <li><span>R$ 209,90</span></li>
+                    </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="botao alinhar-itens-no-centro">
+                <a href="">
+                    VER TUDO
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="colecao-especial row justify-content-center">
+                <div class="titulo section-title">
+                    <h1>COLEÇÃO ESPECIAL</h1>
+                </div>
+                <!-- POR ICONES DE PERFUMES -->
+                <a href="#"><img src="./src/imagem/colecao1.jpg" alt="Pet"></a>
+                <a href="#"><img src="src/imagem/colecao2.jpg" alt="Eletrônicos"></a>
+                <a href="#"><img src="src/imagem/colecao3.jpg" alt="Cozinha"></a>
+                <a href="#"><img src="src/imagem/colecao4.jpg" alt="Acessórios"></a>
+                <a href="#"><img src="src/imagem/colecao5.jpg" alt="Óculos"></a>
+            </div>
+        </section>
+
+        <section>
+            <div class="beneficios">
+                <img src="src/imagem/merchant.png" alt="Todos os benefícios">
+            </div>
+        </section>
+
+        <section>
+            <div class="parallax">
+
+            </div>
+        </section>
+
+        <section>
+            <div class="titulo section-title">
+                <h1>NOSSOS CLIENTE</h1>
+            </div>
+            <hr>
+            <div class="container row justify-content-center">
+                <div class="clientes">
+                    <ul>
+                        <li><img src="./src/imagem/image1.jpg" alt="Cliente Mia"></li>
+                        <li>Estou muito satisfeita, Ótima qualidade e preço justo...</li>
+                        <li><span>Roberta Kalifha</span></li>
+                    </ul>
+                </div>
+
+                <div class="clientes">
+                    <ul>
+                        <li><img src="./src/imagem/image2.jpg" alt="Cliente Poze"></li>
+                        <li>Muita agilidade e qualidade, voltarei a comprar</li>
+                        <li><span>Poze do Rodo</span></li>
+                    </ul>
+                </div>
+
+                <div class="clientes">
+                    <ul>
+                        <li><img src="./src/imagem/image3.jpg" alt="Cliente Letícia"></li>
+                        <li>Amei os produtos, recomendo s2</li>
+                        <li><span>Letícia Ferreira</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="botao alinhar-itens-no-centro">
+                <a href="">
+                    FALAR COM A VENDEDORA
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="informacoes row justify-content-evenly">
+                <img src="./src/imagem/gif.gif" alt="GIF">
+                <ul>
+                    <li>
+                        <h3>INFORMAÇÕES ÚTEIS</h3>
+                    </li>
+                    
+                        <li>Perguntas Frequentes
+                    </a></li>
+                    
+                        <li>Políticas de Reembolso
+                    </li>
+                    
+                        <li>Políticas de Privacidade
+                    </li>
+                    
+                        <li>Termos de uso
+                    </li>
+                    
+                        <li>Políticas de Frete
+                    </li>
+                    
+                        <li>Trocas e Devoluções
+                    </li>
+                    
+                        <li>Rastreio
+                    </li>
+                </ul>
+                <ul class="contato">
+                    <li>
+                        <h3>CONTATO</h3>
+                    </li>
+                    <li>fatimaperfumes@gmail.com</li>
+                    <li>whatsapp (81) 99999-9999</li>
+                    <li>Horário Comercial</li>
+                    <li>Segunda à Sexta: 8:00 às 19:00</li>
+                    <li>Sábado e Domingo: 9:00 às 14:00</li>
+                    <li>CNPJ 00.012.123/0001-22</li>
+                </ul>
+            </div>
+            <div class="rodape row justify-content-evenly">
+                <div class="copy">
+                    © 2023 Unibra - ADS2NAB
+                </div>
+                <ul>
+                    <li><img src="src/imagem/diners.jpg" alt="diners"></li>
+                    <li><img src="src/imagem/paypal.jpg" alt="paypal"></li>
+                    <li><img src="src/imagem/visa.jpg" alt="visa"></li>
+                    <li><img src="src/imagem/master.jpg" alt="master"></li>
+                    <li><img src="src/imagem/boleto.jpg" alt="boleto"></li>
+                </ul>
+                <a id="whatsapp"
+                    href="https:whatsapp.com"
+                    target="_blank"><img src="./src/imagem/wx.png" alt="whatsapp" width="150px"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/script.js"></script>
+    </body>
+
+</html>

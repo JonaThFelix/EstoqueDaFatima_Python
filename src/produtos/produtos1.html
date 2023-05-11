@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympea</title>
+
+    <!-- <link rel="stylesheet" href="../css/fontes.css" /> -->
+    <link rel="stylesheet" href="../css/variaveis.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- Global -->
+    <link rel="stylesheet" href="../css/globais.css">
+    <!-- Seções -->
+    <link rel="stylesheet" href="../css/secoes/header.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/secoes/footer.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </header>
+    <div class="spam">
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/" target="_blanck" id="facebook"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blanck" id="instagram"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+        </div>
+        <div class="frete-gratis">
+            <h5>CATÁLOGO DE ESTOQUE</h5>
+        </div>
+        <div class="creditos">
+            ADS2NAB | Inter 2023.1
+        </div>
+        </div>
+    </div>
+    <header class="header">
+        <div>
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../imagem/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="row">
+                <nav>
+                    <input id="menu-hamburguer" type="checkbox" />
+                    <label for="menu-hamburguer">
+                        <div class="menu">
+                            <span class="hamburguer"></span>
+                        </div>
+                    </label>
+                    <ul>
+                        <li><a href="../../index.html">| HOME |</a></li>
+                        <li><a href="../../index.html">| PERFUMES |</a></li>
+                        <li><a href="../../index.html">| COSMÉTICOS |</a></li>
+                        <li><a href="../../index.html">| KITS |</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="produto">
+            <div class="img">
+                <img id="img0" src="../produtos/imagem/1/img0.jpg" alt="imagem do produto">
+                <img id="img1" onclick="selectPicture1()" src="../produtos/imagem/1/img1.jpg" alt="imagem do produto">
+                <!--img id="img2" onclick="selectPicture2()" src="../produtos/imagem/1/img2.jpg" alt="imagem do produto"-->
+                <img id="img3" onclick="selectPicture3()" src="../produtos/imagem/1/img3.jpg" alt="imagem do produto">
+                <img id="img4" onclick="selectPicture4()" src="../produtos/imagem/1/img4.jpg" alt="imagem do produto">
+            </div>
+            <div class="descricao">
+                <h1>Olympéa Paco Rabanne Eau de Parfum - Perfume Feminino 30ml</h1>
+                <span class="preco">R$368,90</span>
+                <hr>
+                <div class="quantidade">
+                    <span>Quantidade</span>
+                    <div class="icons">
+                        <i onclick="minus()" id='menos' class="fa fa-minus" aria-hidden="true"></i>
+                        <input id="number" type="number" min="1" value="1" min="1">
+                        <i onclick="plus()" id='mais' class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <a id="btn" href="https:whatsapp.com">
+                    VERIFICAR ESTOQUE
+                </a>
+                <h2>DETALHES DO PRODUTO</h2>
+                <hr>
+                <p>Olympéa Paco Rabanne está disponível nas volumetrias de: 30ml, 50ml e 80ml.</p>
+                <img id="cupom" src="../produtos/imagem/1/olimpia.gif" alt="">
+                <p>O Perfume Olympéa, Paco Rabanne, apresenta um aroma inesquecível, que traz à tona a feminilidade
+                     e determinação da mulher que o usa. Conta com notas de Tangerina Verde, Flor de Gengibre
+                      e Jasmim Aquático combinadas com notas de coração de Baunilha Salgada e notas de fundo
+                       de Ambergris, Caxemira e Sândalo. O frasco remete a todos os símbolos da glória:
+                        o tom rosado da fragrância orna harmoniosamente com o vidro em formato de ânfora,
+                         em alusão perfeita aos vasos de cerâmica onde os deuses guardavam as bebidas e
+                          as folhas de louro, às coroas da vitória.</p>
+                <hr>
+                <img id="beneficios" src="../produtos/imagem/1/gif2.gif"
+                    alt="">
+                <hr>
+                <img src="../produtos/imagem/1/img3.jpg" alt="headline">
+                <p>Olympéa é um perfume Paco Rabanne feminino oriental fresco. Traz uma fragrância
+                     que invoca a força de Olímpia, deusa grega mitológica.</p>
+                <img src="../produtos/imagem/1/img1.jpg" alt="headline">
+                <hr>
+                <div class="gif">
+                    <img src="../produtos/imagem/1/2img2.jpg" alt="">
+                </div>
+                <hr>
+                <img src="../produtos/imagem/1/7.jpg" alt="headline">
+                <img src="../produtos/imagem/1/img1.jpg" alt="">
+                <hr>
+                <ul>
+                    <h2>Como Usar</h2>
+                    <li>Conselho de Aplicação
+                        Distribua algumas gotas do perfume sobre a pele limpa, concentrando a aplicação na nuca, dobras e orelhas.
+                        Nossos Experts Ensinam
+                        Antes de passar o perfume, aplique o seu hidratante sem cheiro na pele. Deixe secar e, em seguida,
+                         borrife sua fragrância preferida, para uma maior fixação. </li>
+                    
+                </ul>
+                <hr>
+                <div class="gif">
+                    <img src="../produtos/imagem/1/img2.jpg" alt="">
+                </div>
+                <img src="../produtos/imagem/1/7.jpg" alt="headline">
+                <hr>
+                <p>Topo: Tangerina Verde, Flor de Gengibre e Jasmim Aquático Corpo: Baunilha Salgada Fundo: Ambergris, Caxemira e Sândalo </p>
+                <hr>
+                
+                
+                <p>A fragrância invoca a força e o poder de Olímpia, a deusa grega mitológica. Ela veio para devolver o poder à deusa dos tempos atuais.
+                    Transforma a mulher em um verdadeiro ícone – absoluto, fascinante e único! Sob seus saltos, a terra estremece e seu perfume cativa.
+                    A deusa contemporânea requer um aroma fresco, poderoso e sedutor, para todos caírem aos seus pés. Com Olympéa,
+                     a dualidade entre a feminilidade – um impulso floral fresco – e a profunda sensualidade carnal – saborosa e especiada
+                      – é explorada ao máximo. Para mulheres que sabem apreciar o sabor da vitória. Olympéa é um perfume oriental floral
+                       marcado pela harmonia deliciosa e cativante da baunilha e do sal sobre a pele. O impulso da tangerina verde,
+                        a água de jasmim e a flor de gengibre picante são envolvidas por notas amadeiradas de caxemira e âmbar,
+                         que trazem um toque quente e profundamente sensual à alquimia.
+                </p>
+                
+                <hr>
+                <ul>
+                    <h2>Suporte ao cliente:</h2>
+                    <li>✔️ Você paga somente o valor descrito em nosso site, fique tranquilo, não haverá cobranças
+                        adicionais de taxas ou impostos.</li>
+                    <li>✔️ Enviamos para todo Brasil com seguro e código de rastreamento online.</li>
+                    <li>✔️ Produto com garantia.</li>
+                    <li>✔️ Suporte ao cliente antes e após a compra, chat de atendimento e Whatsapp.</li>
+                    <li>✔️ Site protegido com os melhores certificados de segurança.</li>
+                </ul>
+                <ul>
+                    <h2>Garantia:</h2>
+                    <li>✔️ Todos os nossos produtos possuem garantia contra defeitos de fabricação.</li>
+                    <li>✔️ Guarde a embalagem com todos acessórios caso precise acionar a garantia.</li>
+                    <li>✔️ Todos os nossos produtos possuem até 7 dias para desistência após recebido.</li>
+                </ul>
+                <hr>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="informacoes row justify-content-evenly">
+                <img src="../imagem/gif.gif" alt="GIF">
+                <ul>
+                    <li>
+                        <h3>INFORMAÇÕES ÚTEIS</h3>
+                    </li>
+                    <a href="../pages/perguntas.html">
+                        <li>Perguntas Frequentes
+                    </a></li>
+                    <a href="../pages/reembolso.html">
+                        <li>Políticas de Reembolso
+                    </a></li>
+                    <a href="../pages/privacidade.html">
+                        <li>Políticas de Privacidade
+                    </a></li>
+                    <a href="../pages/termos.html">
+                        <li>Termos de uso
+                    </a></li>
+                    <a href="../pages/frete.html">
+                        <li>Políticas de Frete
+                    </a></li>
+                    <a href="../pages/trocas.html">
+                        <li>Trocas e Devoluções
+                    </a></li>
+                    <a href="../pages/rastreio.html">
+                        <li>Rastreio
+                    </a></li>
+                </ul>
+                <ul class="contato">
+                    <li>
+                        <h3>CONTATO</h3>
+                    </li>
+                    <li>fatimaperfumes@gmail.com</li>
+                    <li>whatsapp (81) 99999-9999</li>
+                    <li>Horário Comercial</li>
+                    <li>Segunda à Sexta: 8:00 às 19:00</li>
+                    <li>Sábado e Domingo: 9:00 às 14:00</li>
+                    <li>CNPJ 00.012.123/0001-22</li>
+                </ul>
+            </div>
+            <div class="rodape row justify-content-evenly">
+                <div class="copy">
+                    © 2023 Unibra - ADS2NAB
+                </div>
+                <ul>
+                    <li><img src="../imagem/diners.jpg" alt="diners"></li>
+                    <li><img src="../imagem/paypal.jpg" alt="paypal"></li>
+                    <li><img src="../imagem/visa.jpg" alt="visa"></li>
+                    <li><img src="../imagem/master.jpg" alt="master"></li>
+                    <li><img src="../imagem/boleto.jpg" alt="boleto"></li>
+                </ul>
+                <a id="whatsapp"
+                    href="https:whatsapp.com"
+                    target="_blank"><img src="../imagem/wx.png" alt="whatsapp" width="150px"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/produto1.js"></script>
+    </body>
+
+</html>

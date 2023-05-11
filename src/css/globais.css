@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  font-size: 62.5%;
+  color: var(--cor-preto);
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+@media(max-width: 1280px) { 
+  html {
+      font-size: 50%;
+  }
+}
+
+body {
+  background-color: var(--cor-branca);
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-normal);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.alinhar-itens-no-centro {
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 5px 0;
+  margin-bottom: 60px;
+  font-family: var(--fonte-secundaria);
+  font-size: 2.5rem;
+  border: 2px solid rgb(181, 14, 247);
+}
+
+.redes-sociais a {
+  width: 25px;
+  height: 25px;
+  font-size: 1.8rem;
+  color: var(--cor-branca);
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.redes-sociais a i {
+  line-height: 25px;
+}
+
+.redes-sociais a:hover {
+  color: var(--cor-primaria);
+}
+
+.botao {
+  background-color:var(--cor-primaria);
+  width: 180px;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+  transition: all .3s ease;
+  background-color: var(--cor-primaria);
+  margin: 60px auto;
+}
+
+.botao:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branca);
+}
+
+.section{
+  padding: 7rem 0 7rem;
+}
+
+
+

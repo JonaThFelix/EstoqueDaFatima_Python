@@ -1,0 +1,88 @@
+footer {
+    background-color: var(--cor-preto);
+    color: var(--cor-branca);
+}
+
+.informacoes img {
+    width: 200px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+h3, header nav ul {
+    font-family: var(--fonte-terciaria);
+    color: var(--cor-rosa);
+  }
+
+.informacoes ul {
+    width: 225px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.informacoes .contato {
+    width: 290px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.informacoes ul li {
+    margin: 10px;
+}
+
+.rodape .copy {
+    width: 355px;
+    font-size: 1.2rem;
+    align-self: center;
+    margin: 5px;
+}
+
+.rodape ul {
+    width: 270px;
+}
+
+.rodape ul li {
+    width: 50px;
+    display: inline;
+}
+
+.rodape ul li img {
+    width: 50px;
+    height: 30px;
+    padding: 4px;
+}
+
+#whatsapp img {
+    position: fixed;
+    width: 150px;
+    bottom: 60px;
+    right: -10px;
+  } 
+
+  @media(max-width: 425px) { 
+    .informacoes .contato {
+        width: 235px;
+        text-align: left;
+        margin: 15px 0;
+    }
+  }
+
+  @media(max-width: 650px) { 
+    .rodape {
+        justify-content: center;
+      } 
+
+      .rodape .copy {
+        width: 340px;
+        font-size: 1.4rem;
+    }
+  }
+
+  @media(max-width: 900px) { 
+    .rodape #whatsapp img {
+        position: fixed;
+        width: 120px;
+        bottom: 40px;
+        right: -15px;
+      } 
+  }
