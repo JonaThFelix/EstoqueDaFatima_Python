@@ -132,4 +132,4 @@ aviso["bg"] = "pink"
 aviso['fg'] = '#8B0000'
 #--------------------------------------------------------------------------------
 
-window.mainloop() #AQUI DEIXA A JANELA NO LOOP PARA QUE ELA NÃO FIQUE FECHANDO SOZINHA
+window.mainloop() 
