@@ -247,7 +247,6 @@ def criaJanelaTransacao():
     posY = altura_tela / 2 - altura / 2
     janelaTransacao.geometry("%dx%d+%d+%d" % (largura, altura, posX, posY))
     janelaTransacao.title("Registrar Transação")
-    #janelaTransacao.geometry("680x400")  # 680x370+350+200
     janelaTransacao.resizable(width=False, height=False)
 
     # --------------------LAYOUT DOS BOTOES--------------------------
@@ -381,7 +380,6 @@ def criaJanelaEstoque():
         pesquisado.geometry("%dx%d+%d+%d" % (largura, altura, posX, posY))
 
         pesquisado.title("Produto Pesquisado")
-        # janelaHistorico.geometry("400x400+525+0")
         pesquisado["bg"] = '#efe1e1'
         pesquisado.resizable(width=False, height=False)
 
@@ -441,18 +439,7 @@ def criaJanelaEstoque():
     tb3 = tk.Frame(hist)
     hist.add(tb3, text='Estoque')
     tb3["bg"] = "#efe1e1"
-
-    ### ----------------------------------------FUNCIONAMENTO DO HISTÓRICO DE COMPRAS-------------------------------------------###
-    # ------------------------------------LINHAS SUBSTITUIDAS PELA ADIÇÃO DO TREEVIEW--------------------------------------------
-    # produto_label = customtkinter.CTkLabel(tb1,fg_color='#87CEFA', text_color='black' ,text="|    Produto    ", font=("Arial", 20))
-    # produto_label.grid(row=0, column=1, padx=20, pady=10)
-    # quantidade_label = customtkinter.CTkLabel(tb1,fg_color='#87CEFA', text_color='black', text="|    Qtd    ", font=("Arial", 20))
-    # quantidade_label.grid(row=0, column=2, padx=20, pady=10)
-    # preco_label = customtkinter.CTkLabel(tb1,fg_color='#87CEFA', text_color='black', text="|    Preço    |", font=("Arial", 20))
-    # preco_label.grid(row=0, column=3, padx=20, pady=10)
-    # ---------------------------------------------------------------------------------------------------------------------------
     tree = ttk.Treeview(tb1)
-    #tree['padding'] =  (5,10,5,10)
     tree.place(relx=.35, rely=.5, anchor='center', height=450, width=400)
     tree['columns'] = ('Quantidade', 'Preço')
     tree.column('#0', width=120, minwidth=120, anchor='w')
@@ -466,35 +453,7 @@ def criaJanelaEstoque():
         for dadosc in compras:
             tree.insert('', 'end', text=produto, values=(dadosc[0], dadosc[1]))
 
-    # -------------TESTANDO A BARRA DE ROLAGEM------------------
-    #barra = ttk.Scrollbar(tb1, orient="vertical", command=tree.yview)
-    #barra.place(relx=.65, rely=.1, anchor='center')
-    #tree.configure(yscrollcommand=barra.set)
 
-# ------------Obtendo dados de Compra(Modelo Base)------------------
-#    row = 1
-#    for produto, compras in dicionarioCompra.items():
-#        for dadosc in compras:
-#            produto_label = tk.Label(tb1, text=produto)
-#            produto_label.grid(row=row, column=1, padx=20, pady=10)
-#
-#            quantidade_label = tk.Label(tb1, text=dadosc[0])
-#            quantidade_label.grid(row=row, column=2, padx=20, pady=10)
-#
-#            preco_label = tk.Label(tb1, text=dadosc[1])
-#            preco_label.grid(row=row, column=3, padx=20, pady=10)
-#
-#            row += 1
-
-    # ------------------------------------------FUNCIONAMENTO DO HISTÓRICO DE VENDAS--------------------------------------------###
-    # ------------------------------------LINHAS SUBSTITUIDAS PELA ADIÇÃO DO TREEVIEW--------------------------------------------
-    # produto_label = customtkinter.CTkLabel(tb2,fg_color='#87CEFA',text_color='black', text="|    Produto    ", font=("Arial", 20))
-    # produto_label.grid(row=0, column=0, padx=10, pady=10)
-    # quantidade_label = customtkinter.CTkLabel(tb2,fg_color='#87CEFA',text_color='black', text="|    Qtd    ", font=("Arial", 20))
-    # quantidade_label.grid(row=0, column=1, padx=10, pady=10)
-    # preco_label = customtkinter.CTkLabel(tb2,fg_color='#87CEFA',text_color='black', text="|    Preço    |", font=("Arial", 20))
-    # preco_label.grid(row=0, column=2, padx=10, pady=10)
-    # ---------------------------------------------------------------------------------------------------------------------------
     tree = ttk.Treeview(tb2)
     tree.place(relx=.35, rely=.5, anchor='center', height=450, width=400)
     tree['columns'] = ('Quantidade', 'Preço')
@@ -509,31 +468,7 @@ def criaJanelaEstoque():
         for dadosv in vendas:
             tree.insert('', 'end', text=produto, values=(dadosv[0], dadosv[1]))
 
-    #tree.grid(row=1, column=0, padx=10, pady=10)
-
-# ------------Obtendo dados de Venda(Modelo Base)------------------
-#    row = 1
-#    for produto, vendas in dicVenda.items():
-#        for dadosv in vendas:
-#            produto_label = tk.Label(tb2, text=produto)
-#            produto_label.grid(row=row, column=0, padx=10, pady=10)
-#
-#            quantidade_label = tk.Label(tb2, text=dadosv[0])
-#            quantidade_label.grid(row=row, column=1, padx=10, pady=10)
-#
-#            preco_label = tk.Label(tb2, text=dadosv[1])
-#            preco_label.grid(row=row, column=2, padx=10, pady=10)
-#
-#            row += 1
-
-    ### ----------------------------------------FUNCIONAMENTO DA ABA DE ESTOQUE---------------------------------------------------###
-    # ---------------------------Linhas substituídas com a implementação do Treeview(linhas funcionais)----------------------------
-    # produto_label = customtkinter.CTkLabel(tb3,fg_color='#87CEFA', text_color='black', text="|    Produto    |", font=("Arial", 20))
-    # produto_label.grid(row=0, column=0, padx=10, pady=10)
-    # quantidade_label = customtkinter.CTkLabel(tb3,fg_color='#87CEFA', text_color='black', text="   Qtd    |", font=("Arial", 20))
-    # quantidade_label.grid(row=0, column=1, padx=10, pady=10)
-    # validade_label = customtkinter.CTkLabel(tb3,fg_color='#87CEFA', text_color='black', text="   Validade   |", font=("Arial", 20))
-    # validade_label.grid(row=0, column=3, padx=10, pady=10)
+ 
     # -----------------------------------------------------------------------------------------------------------------------------
     tree = ttk.Treeview(tb3)
     tree.place(relx=.35, rely=.5, anchor='center', height=450, width=400)
@@ -547,29 +482,7 @@ def criaJanelaEstoque():
     for produto, estocagem in dicionarioEstoque.items():
         tree.insert('', 'end', text=produto, values=(estocagem,))
 
-    #tree.grid(row=1, column=0, padx=10, pady=10)
-# ---------------------TESTANDO TREEVIEW------------------------
-#    tv = ttk.Treeview(tb3, columns=('Produto'), show='headings')
-#    tv.column('Produto', width=100)
-#    #tv.column('Quantidade', width=90)
-#    tv.heading('Produto', text='Produto')
-#    #tv.heading('Quantidade', text='QUANTIDADE')
-#    tv.pack()
-#
-#    for (pro) in dicionarioEstoque:
-#        tv.insert("", "end", values=(pro))
-# --------------------DEU CERTO(modelo base)----------------------
-
-# ------------Obtendo dados de Estoque(Modelo Base)------------------
-#    row = 1
-#    for produto, estocagem in dicionarioEstoque.items():
-#        produto_label = tk.Label(tb3, text=produto)
-#        produto_label.grid(row=row, column=0, padx=10, pady=10)
-#
-#        quantidade_label = tk.Label(tb3, text=estocagem)
-#        quantidade_label.grid(row=row, column=1, padx=10, pady=10)
-#
-#        row += 1
+   
 # -------------------------------------------------------------------
 
     # ---------------------------------------------------Bloco de Botões--------------------------------------------------------
@@ -584,19 +497,6 @@ def criaJanelaEstoque():
         janelaDados, fg_color='green', text="Pesquisar Produto",hover_color='#292929', command=auxiliar)
     botaoProcurar.place(x=450, y=40)
 
-   # def exportar():
-    #  marks_data = pd.DataFrame(dicionarioEstoque)
-    #  file_name = 'MarksData.xlsx'
-    # marks_data.to_excel(file_name)
-   # exportar()
-
-    # botaoexportacao = customtkinter.CTkButton(janelaDados, fg_color='blue', text="Exportar", width=80, height=40,command="")
-
-    # botaoexportacao.place(x=500, y=130)
-
-    janelaDados.mainloop()
-
-# ------------------------------FUNÇAO JANELA GERENCIAMENTO DE USUARIO-------------------------------
 
 
 def criaJanelaGerenciamento():
@@ -782,84 +682,7 @@ def criaJanelaGerenciamento():
     resultadoExclusao.place(x=160, y=400)
     resultadoExclusao["bg"] = "#efe1e1"
 
-# ----------------------FUNÇÃO REALOCADA PARA JANELA INFORMAÇÕES DE ESTOQUE---------------------------
-# -----------------------------FUNÇAO CRIA JANELA PESQUISAR PRODUTO----------------------------------
-# def criaJanelaPesquisaProduto():
-#    # ---------------------------FUNCIONAMENTO BOTOES PESQUISA PRODUTO-------------------------------
-#    def pesquisaProduto():
-#        pesquisaProdutoNome = entradaNomeProduto.get()
-#        if pesquisaProdutoNome in dicionarioEstoque:
-#            produtoResultadoNome["text"] = "Nome:", pesquisaProdutoNome
-#            produtoResultadoQuantidade["text"] = "Qtd em estoque:", dicionarioEstoque[pesquisaProdutoNome]
-#            janelaPesquisaProduto.geometry("415x140+525+270")
-#        else:
-#            produtoResultadoNome["text"] = pesquisaProdutoNome, "em falta!"
-#            produtoResultadoQuantidade["text"] = ""
-#
-#    # -------------------------------LAYOUT JANELA PESQUISA PRODUTO---------------------------------
-#    janelaPesquisaProduto = tk.Tk()
-#
-#    largura = 415
-#    altura = 100
-#
-#    largura_tela = janelaPesquisaProduto.winfo_screenwidth()
-#    altura_tela = janelaPesquisaProduto.winfo_screenheight()
-#    posX = largura_tela / 2 - largura / 2
-#    posY = altura_tela / 2 - altura  / 2
-#    janelaPesquisaProduto.geometry("%dx%d+%d+%d"%(largura, altura, posX, posY))
-#
-#    #janelaPesquisaProduto.geometry("415x100+525+270")
-#    janelaPesquisaProduto.title("Pesquisa Produto")
-#    janelaPesquisaProduto["bg"] = "#87CEFA"
-#    janelaPesquisaProduto.resizable(width=False, height=False)
-#
-#    # -----------------------------LAYOUT BOTOES PESQUISA PRODUTO-----------------------------------
-#    nomeProduto = tk.Label(janelaPesquisaProduto, text="Nome do produto:")
-#    nomeProduto.place(x=20, y=20)
-#    nomeProduto["bg"] = "#87CEFA"
-#
-#    entradaNomeProduto = customtkinter.CTkEntry(janelaPesquisaProduto,fg_color="white", text_color='black')
-#    entradaNomeProduto.place(x=140, y=20)
-#
-#    botaoProcurar = customtkinter.CTkButton(janelaPesquisaProduto,fg_color='green' ,text="Pesquisar", command=pesquisaProduto)
-#    botaoProcurar.place(x=60, y=52)
-#
-#
-#
-#    botaoVoltar =customtkinter.CTkButton(janelaPesquisaProduto,text="Voltar", command=janelaPesquisaProduto.destroy)
-#    botaoVoltar.place(x=220, y=52)
-#
-#
-#    produtoResultadoNome = tk.Label(janelaPesquisaProduto, text="")
-#    produtoResultadoNome.place(x=140, y=80)
-#    produtoResultadoNome["bg"] = "#87CEFA"
-#
-#    produtoResultadoQuantidade = tk.Label(janelaPesquisaProduto, text="")
-#    produtoResultadoQuantidade.place(x=125, y=100)
-#    produtoResultadoQuantidade["bg"] = "#87CEFA"
-# -------------------------------------------------------------------------------------------
 
-# ----------FUNÇÃO REALOCADA NA JANELA INFORMAÇÕES DE ESTOQUE (ESTOQUE/HISTÓRICOS)-----------
-# ----------------------------------CHECAR ESTOQUE -----------------------------------------
-# def criaJanelaEstoque():
-#    janelaEstoque = tk.Tk()
-#
-#    largura = 400
-#    altura = 200
-#
-#    largura_tela = janelaEstoque.winfo_screenwidth()
-#    altura_tela = janelaEstoque.winfo_screenheight()
-#    posX = largura_tela / 2 - largura / 2
-#    posY = altura_tela / 2 - altura  / 2
-#    janelaEstoque.geometry("%dx%d+%d+%d"%(largura, altura, posX, posY))
-#
-#    #janelaEstoque.title("Total de Estoque")
-#    #janelaEstoque.geometry("400x200")
-#    janelaEstoque.resizable(width=False, height=False)
-#    janelaEstoque.mainloop()
-# -------------------------------------------------------------------------------------------
-
-# ------------------------------------FUNÇAO TELA ADMIN--------------------------------------
 
 
 def telaMenu(x):
@@ -888,13 +711,7 @@ def telaMenu(x):
     botaoCadastro = customtkinter.CTkButton(
         janela, text="Gerenciamento de Usuário", fg_color='#CD5C5C',hover_color='#292929' , width=360, height=60, command=criaJanelaGerenciamento)
     botaoCadastro.place(x=120, y=90)
-    # botaoCadastro["bg"] = "#B0E0E6"
-
-    # -------------------------------botão inoperante desde a versão 1.2.2, informações mantidas para fins de estudo----------------------------------------
-    # botaoPesquisa = customtkinter.CTkButton(janela, text="Pesquisar Produto",fg_color='#CD5C5C' , width=360, height=50, command=criaJanelaPesquisaProduto)
-    # botaoPesquisa.place(x=20, y=140)
-    # botaoPesquisa["bg"] = "#B0E0E6"
-    # ------------------------------------------------------------------------------------------------------------------------------------------------------
+   
 
     # RAZAO DO Y = 60
     botaoHistorico = customtkinter.CTkButton(
